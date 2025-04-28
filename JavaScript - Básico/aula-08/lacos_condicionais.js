@@ -51,11 +51,26 @@ const prompt = require("readline-sync");
 
 // Loop com contador
 
-let contador = 0;
+// let contador = 0;
 
-while (contador <= 5) {
-  console.log(contador);
-  contador++;
-}
+// while (contador <= 5) {
+//   console.log(contador);
+//   contador++;
 
-console.log("Fim da contagem");
+//   if (contador === 2) {
+//     continue;
+//   }
+//   console.log("Depois do if...");
+// }
+
+// console.log("Fim da contagem");
+
+// * DO-WHILE
+
+let saldo; // undefined
+
+do {
+  saldo = Number(prompt.question("Informe um saldo valido: "));
+} while (saldo < 0);
+
+console.log(saldo);
