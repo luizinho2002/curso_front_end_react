@@ -1,6 +1,7 @@
-for (i = 0; i <= 5; i++) {
-  console.log(i);
-}
+const notasDoAluno = [10, 8, 5];
+const pessoa = ["Luiz", 23, 1.77, true];
 
-// Limpando o console
-console.clear();
+console.log(notasDoAluno);
+console.log(pessoa);
+
+console.log(pessoa[1]);
