@@ -5,3 +5,7 @@ console.log(notasDoAluno);
 console.log(pessoa);
 
 console.log(pessoa[1]);
+
+pessoa[3] = false;
+
+console.log(pessoa);
