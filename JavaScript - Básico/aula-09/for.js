@@ -67,7 +67,7 @@ console.log(notasDoAluno.length);
 console.clear();
 
 // Fatiamento de arrays
-const numeros = [40, 34, 67, 89, 23, 10];
+const numeros = [40, 34, 67, 89, 23, 10, 40];
 
 console.log(numeros.slice(0, 2));
 console.log(numeros.slice(2));
@@ -104,4 +104,45 @@ if (numeros.includes(20)) {
   console.log("Não existe o número 20 no array numeros.");
 }
 
-const existeONumero20 = includes(20);
+const existeONumero20 = numeros.includes(20);
+
+console.clear();
+
+// * indexOf
+const indiceDoElemento10 = numeros.indexOf(10);
+
+console.log(indiceDoElemento10);
+
+// * lastIndexOf
+// [10, 3, 6, 10, 4]
+const indiceDoElemento40 = numeros.lastIndexOf(40);
+
+console.log(indiceDoElemento40);
+
+console.clear();
+
+// Percorrendo arrays com for
+
+const arr = [45, 36, 90, 76, 32, 7];
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(i, arr[i]);
+}
+
+console.clear();
+
+// * for-of
+
+for (const elemento of arr) {
+  console.log(elemento);
+}
+
+console.clear();
+
+// * for-in
+
+for (const indice in arr) {
+  console.log(indice, typeof indice);
+  console.log(arr[indice[0]]);
+  
+}
