@@ -1,11 +1,9 @@
 // Definição da função
 function saudacao(nomeDoEstudante, curso) {
   // template string || template literals
-  console.log(`Olá, ${nomeDoEstudante}!`);
-  console.log(`Seja bem-vindo(a) ao curso de ${curso}!`);
+  return `Olá, ${nomeDoEstudante}! Seja bem-vindo(a) ao curso de ${curso}!`;
 }
 
-saudacao("Luiz", "Back-end em Node.js"); // Chamada da função saudacao
- 
+const mensagemDaSaudacao = saudacao("Luiz", "Front-end em React"); // Chamada da função saudacao
 
- 
+console.log(mensagemDaSaudacao);
