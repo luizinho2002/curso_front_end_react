@@ -38,6 +38,12 @@ console.clear();
 // -------------------------------------------
 // ARROW FUNCTIONS: Função Seta
 
-const subtrair = (x, y) => {
-  return x - y;
+const subtrair = (numero1, numero2) => {
+  if (x < 0) console.log("O número 1 é negativo");
+
+  return numero1 - numero2;
 };
+
+const multiplicar = (numero1, numero2) => numero1 * numero2;
+
+const triploDoNumero = (numero) => numero * 3;
