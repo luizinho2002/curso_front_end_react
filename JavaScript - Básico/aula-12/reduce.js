@@ -34,3 +34,4 @@ const totalAPagar = carrinho.reduce((acumulador, item) => {
 
 console.clear();
 console.log(totalAPagar);
+
